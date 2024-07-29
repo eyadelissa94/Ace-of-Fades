@@ -185,6 +185,11 @@ footer p {
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
+
+    .banner-bg {
+        background-attachment: scroll;
+    }
+
     .card {
         width: 100%;
         margin: 20px 0;
