@@ -107,7 +107,7 @@ header nav {
 
 /* Hero */
 .banner-bg {
-    background-image: url('/images/banner.jpg');
+    background-image: url('images/banner.jpg');
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
