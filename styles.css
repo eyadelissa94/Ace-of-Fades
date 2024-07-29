@@ -1,0 +1,192 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Global link styles */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+/* Utility classes for spacing */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mt-5 { margin-top: 3rem; }
+
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mb-5 { margin-bottom: 3rem; }
+
+/* Flex utility classes */
+.d-flex {
+    display: flex !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+/* Custom container styles */
+.container-custom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/* Header */
+header nav {
+    background-color: #EDF2F4;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.navbar-brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tel-number {
+    color: #2B2D42;
+}
+
+.tel-number:hover {
+    color: #8D99AE;
+}
+
+.book-now-btn {
+    background-color: #2B2D42;
+    color: #EDF2F4;
+    padding: 10px;
+}
+
+.book-now-btn:hover {
+    background-color: #8D99AE;
+    color: #EDF2F4;
+}
+
+.tel-number,
+.book-now-btn {
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.tel-number i {
+    margin-right: 5px;
+}
+
+/* Hero */
+.banner-bg {
+    background-image: url('/images/banner.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Services */
+.services {
+    padding: 60px 0;
+    background-color: #2B2D42;
+}
+
+.card {
+    width: 20rem;
+    background-color: #EDF2F4;
+}
+
+/* Shop-info */
+
+.shop-info {
+    background-color: #EDF2F4;
+    padding: 60px 0;
+}
+
+.logo-info {
+    max-width: 400px;
+    height: auto;
+}
+
+.shop-info p {
+    font-size: 30px;
+    color: #2B2D42;
+}
+
+.shop-info iframe {
+    width: 100%;
+}
+
+/* footer */
+
+footer {
+    padding-top: 20px;
+    background-color: #2B2D42;
+}
+
+footer p {
+    color: #EDF2F4;
+}
+
+/* Small devices (landscape phones) */
+@media (max-width: 576px) {
+    .logo {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .book-now-btn {
+        font-size: 0.9rem;
+    }
+
+    .logo-info {
+        max-width: 200px;
+    }
+
+    .shop-info p {
+        font-size: 20px;
+    }
+
+    .shop-info iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .card {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
