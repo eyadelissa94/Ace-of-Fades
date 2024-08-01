@@ -130,6 +130,10 @@ footer p {
     margin-right: 10px;
     }
 
+    .banner-bg {
+        background-attachment: fixed;
+    }
+
     .logo-info {
         max-width: 18rem;
     }
@@ -154,9 +158,5 @@ footer p {
     .book-now-btn {
     font-size: 1.2rem;
     margin-right: 15px;
-    }
-
-    .banner-bg {
-        background-attachment: fixed;
     }
 }
