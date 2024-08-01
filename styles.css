@@ -18,57 +18,20 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: none;
-    color: #0056b3;
-}
-
-/* Utility classes for spacing */
-.mt-1 { margin-top: 0.25rem; }
-.mt-2 { margin-top: 0.5rem; }
-.mt-3 { margin-top: 1rem; }
-.mt-4 { margin-top: 1.5rem; }
-.mt-5 { margin-top: 3rem; }
-
-.mb-1 { margin-bottom: 0.25rem; }
-.mb-2 { margin-bottom: 0.5rem; }
-.mb-3 { margin-bottom: 1rem; }
-.mb-4 { margin-bottom: 1.5rem; }
-.mb-5 { margin-bottom: 3rem; }
-
-/* Flex utility classes */
-.d-flex {
-    display: flex !important;
-}
-
-.align-items-center {
-    align-items: center !important;
-}
-
-.justify-content-center {
-    justify-content: center !important;
-}
-
-.text-center {
-    text-align: center !important;
-}
-
-/* Custom container styles */
-.container-custom {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-
 /* Header */
 header nav {
     background-color: #EDF2F4;
 }
 
 .logo {
-    max-width: 200px;
+    max-width: 6rem;
     height: auto;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar-brand img {
@@ -87,7 +50,6 @@ header nav {
 .book-now-btn {
     background-color: #2B2D42;
     color: #EDF2F4;
-    padding: 10px;
 }
 
 .book-now-btn:hover {
@@ -97,11 +59,7 @@ header nav {
 
 .tel-number,
 .book-now-btn {
-    font-size: 1.2rem;
-    margin-right: 20px;
-}
-
-.tel-number i {
+    font-size: .8rem;
     margin-right: 5px;
 }
 
@@ -122,8 +80,8 @@ header nav {
 }
 
 .card {
-    width: 20rem;
     background-color: #EDF2F4;
+    margin-bottom: 20px;
 }
 
 /* Shop-info */
@@ -134,12 +92,12 @@ header nav {
 }
 
 .logo-info {
-    max-width: 400px;
+    max-width: 14rem;
     height: auto;
 }
 
 .shop-info p {
-    font-size: 30px;
+    font-size: 1.1rem;
     color: #2B2D42;
 }
 
@@ -150,48 +108,51 @@ header nav {
 /* footer */
 
 footer {
-    padding-top: 20px;
+    padding-top: 18px;
     background-color: #2B2D42;
 }
 
 footer p {
+    font-size: .8rem;
     color: #EDF2F4;
 }
 
-/* Small devices (landscape phones) */
-@media (max-width: 576px) {
+/* Small devices (576px and up) */
+@media (min-width: 576px) {
+
     .logo {
-        max-width: 120px;
-        height: auto;
+        max-width: 160px;
     }
 
+    .tel-number,
     .book-now-btn {
-        font-size: 0.9rem;
+    font-size: 1rem;
+    margin-right: 10px;
     }
 
     .logo-info {
-        max-width: 200px;
+        max-width: 18rem;
     }
 
     .shop-info p {
-        font-size: 20px;
+        font-size: 1.4rem;
     }
 
-    .shop-info iframe {
-        width: 100%;
-        height: 400px;
+    footer p {
+        font-size: 1rem;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) { 
+@media (min-width: 768px) {
 
-    .banner-bg {
-        background-attachment: scroll;
+    .logo {
+        max-width: 200px;
     }
 
-    .card {
-        width: 100%;
-        margin: 20px 0;
+    .tel-number,
+    .book-now-btn {
+    font-size: 1.2rem;
+    margin-right: 15px;
     }
 }
