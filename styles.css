@@ -117,6 +117,13 @@ footer p {
     color: #EDF2F4;
 }
 
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .banner-bg {
+        background-attachment: scroll;
+    }
+}
+
 /* Small devices (576px and up) */
 @media (min-width: 576px) {
 
