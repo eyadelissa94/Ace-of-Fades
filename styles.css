@@ -67,7 +67,7 @@ header nav {
 .banner-bg {
     background-image: url('images/banner.jpg');
     min-height: 500px;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,13 +117,6 @@ footer p {
     color: #EDF2F4;
 }
 
-/* `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-    .banner-bg {
-        background-attachment: scroll;
-    }
-}
-
 /* Small devices (576px and up) */
 @media (min-width: 576px) {
 
@@ -161,5 +154,9 @@ footer p {
     .book-now-btn {
     font-size: 1.2rem;
     margin-right: 15px;
+    }
+
+    .banner-bg {
+        background-attachment: fixed;
     }
 }
